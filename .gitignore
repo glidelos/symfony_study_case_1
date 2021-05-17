@@ -1,0 +1,77 @@
+###> symfony/framework-bundle ###
+/api/.env.local
+/api/.env.local.php
+/api/.env.*.local
+/api/.env
+/api/config/secrets/prod/prod.decrypt.private.php
+/api/public/bundles/
+/api/var/
+/api/vendor/
+###< symfony/framework-bundle ###
+
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,symfony
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,symfony
+
+# Email spool folder
+/api/app/spool/*
+
+# Logs (Symfony4)
+/api/var/log/*
+!api/var/log/.gitkeep
+
+# Parameters
+/api/app/config/parameters.yml
+/api/app/config/parameters.ini
+
+# Managed by Composer
+/api/app/bootstrap.php.cache
+/api/var/bootstrap.php.cache
+/api/bin/*
+!api/bin/console
+!api/bin/symfony_requirements
+/api/vendor/
+
+# Assets and user uploads
+/api/web/bundles/
+/api/web/uploads/
+
+# PHPUnit
+/api/app/phpunit.xml
+/api/phpunit.xml
+
+# Build data
+/api/build/
+
+# Composer PHAR
+/api/composer.phar
+
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+
+# Embedded web-server pid file
+/api/.web-server-pid
+
+### Symfony Patch ###
+/api/web/css/
+/api/web/js/
+
+###> client - frontend ###
+/client/.eslintignore
+/client/node_modules/
+/client/build/.htaccess
+/client/.cache-loader/
+/client/.config/configstore/update-notifier-npm.json
+###< client - frontend ###
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
